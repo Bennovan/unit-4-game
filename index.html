@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Crystals Game</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="content">
+      <header>Crystals Collector Game</header>
+
+      <div class="instructions">
+        <h2>Instructions:</h2>
+        <p>
+          You will be given a random number at the begining of this game. There
+          are four crystals below.
+        </p>
+        <p>
+          clicking on a crystal, you will add a specific number of points to
+          your total score.
+        </p>
+        <p>
+          You win by matching your total score to the random number; you lose
+          the game if your score exceeds the random number.
+        </p>
+        <p>
+          Each crystal's value remains hidden until you click it. Each crystal's
+          value changes each time the game starts.
+        </p>
+      </div>
+      <div class="container">
+        <div class="col-md-6">
+          <div id="scoreToWin">Score to Win Game</div>
+        </div>
+
+        <div id="scoreboard">
+          <div class="col-md-6">
+            <div class="wins">win</div>
+
+            <div class="losses">Loss</div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="container2">
+        <div class="col-md-3">
+          <div class="crystal1">
+            <button id="button1" class="number" value="">
+              <img
+                src="./assets/images/yellow.jpg"
+                style="width: 180px; height: 150px"
+                alt="yellow crystal"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="crystal2">
+            <button id="button2" class="number" value="">
+              <img
+                src="./assets/images/red.jpg"
+                style="width: 180px; height: 150px"
+                alt="red crystal"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="crystal3">
+            <button id="button3" class="number" value="">
+              <img
+                src="./assets/images/purple.jpg"
+                style="width: 180px; height: 150px"
+                alt="purple crystal"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="crystal4">
+            <button id="button4" class="number" value="">
+              <img
+                src="./assets/images/blue.PNG"
+                style="width: 180px; height: 150px"
+                alt="blue crystal"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div id="progressScore">your total so far:</div>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+    <audio id="tada">
+      <source src="./assets/tada.wav" type="audio/mpeg" />
+    </audio>
+    <audio id="Sad-trombone">
+      <source src="./assets/Sad-trombone.wav" type="audio/mpeg" />
+    </audio>
+  </body>
+</html>
